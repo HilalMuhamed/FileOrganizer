@@ -4,6 +4,7 @@ import time
 import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from dotenv import load_dotenv
 
 source = os.getenv("SOURCE")
 destPdf = os.getenv("DEST_PDF")

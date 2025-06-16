@@ -5,12 +5,12 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-source = r"C:\Users\hilal muhammed n\Downloads"
-destPdf = r"C:\Users\hilal muhammed n\Downloads\Pdf Storage"
-destDoc = r"C:\Users\hilal muhammed n\Downloads\Document Storage"
-destPpt = r"C:\Users\hilal muhammed n\Downloads\PPT Storage"
-destSound = r"C:\Users\hilal muhammed n\Downloads\Sound Storage"
-destImg = r"C:\Users\hilal muhammed n\Downloads\Image Storage"
+source = os.getenv("SOURCE")
+destPdf = os.getenv("DEST_PDF")
+destDoc = os.getenv("DEST_DOC")
+destPpt = os.getenv("DEST_PPT")
+destSound = os.getenv("DEST_SOUND")
+destImg = os.getenv("DEST_IMG")
 
 imgExtentions = [".jpg", ".jpeg", ".jpe", ".png", ".gif", ".svg"]
 soundExtentions = [".mp3", ".wav"]
